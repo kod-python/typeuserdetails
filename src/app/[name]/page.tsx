@@ -1,6 +1,7 @@
 // "use client";
 import React from "react";
 import { data } from "@/components/Display/Display";
+import Link from "next/link";
 
 // import { useParams } from "next/navigation";
 
@@ -16,6 +17,8 @@ const DisplayPage = ({ params }: { params: { name: string } }) => {
 
   return (
     <div>
+<Link href="/" className="py-1 px-4 rounded bg-blue-500">back</Link>
+
        {user && user.age <= 20 && <p>{user.age}</p>}
 
       {/* {user ? (
