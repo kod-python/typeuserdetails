@@ -27,7 +27,7 @@ const DisplayPage = ({ params }: { params: { name: string } }) => {
 
        {user ? (
         <div>
-        <img src={user.imageUrl} alt="logo" />
+        <img src={user.imageUrl} alt="logo" width={500} height={100} />
           <p>Name: {user.name}</p>
           <p>Age: {user.age}</p>
           <p>Password: {user.password}</p>
