@@ -3,6 +3,9 @@ import React from "react";
 import { data } from "@/components/Display/Display";
 import Link from "next/link";
 
+import Image from "next/image";
+
+
 // import { useParams } from "next/navigation";
 
 const DisplayPage = ({ params }: { params: { name: string } }) => {
@@ -24,9 +27,10 @@ const DisplayPage = ({ params }: { params: { name: string } }) => {
 
        {user ? (
         <div>
-          <p>{user.name}</p>
-          <p>{user.age}</p>
-          <p>{user.password}</p>
+        <img src={user.imageUrl} alt="logo" />
+          <p>Name: {user.name}</p>
+          <p>Age: {user.age}</p>
+          <p>Password: {user.password}</p>
         </div>
       ) : (
         <p>{}</p>

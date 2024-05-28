@@ -2,6 +2,8 @@
 import React from 'react';
 import Link from 'next/link';
 import { data } from '../Display/Display';
+import next from "../../../public/next.svg"
+
 
 const DataPage = () => {
 
