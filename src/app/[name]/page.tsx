@@ -17,6 +17,7 @@ const DisplayPage = ({ params }: { params: { name: string } }) => {
 
   return (
     <div>
+      <h1 className='text-center text-[2rem] text-gray-600 font-bold'>Data Display Page</h1>
 <Link href="/" className="py-1 px-4 rounded bg-blue-500">back</Link>
 
        {user && user.age <= 20 && <p>{user.age}</p>}
